@@ -77,7 +77,7 @@ resource "aws_instance" "ansible" {
 
     provisioner "remote-exec" { 
         inline = [
-            "sudo su"
+            "sudo su",
             "sudo apt update -y",
             "sudo apt install -y  ansible",
             "ansible --version "
