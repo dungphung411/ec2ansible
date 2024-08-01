@@ -85,7 +85,7 @@ resource "aws_instance" "ansible" {
         ]
         connection {
             type = "ssh"
-            user = "ec2-user"
+            user = "ubuntu"
             private_key = tls_private_key.keypem.private_key_pem
             host = self.public_ip
     
